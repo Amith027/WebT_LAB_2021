@@ -1,0 +1,13 @@
+h1,p{
+	color: lightgreen;
+}
+
+form{
+	color: lightgreen;
+	font-size: 25px;
+}
+
+input{
+	height: 25px;
+	width: 150px;
+}
