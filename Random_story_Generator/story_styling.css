@@ -1,0 +1,12 @@
+body{
+	font-family: helvetica, sans-serif;
+	width: 350px;
+}
+
+p {
+	background-color: yellow;
+	color: black;
+	padding: 15px;
+	visibility: hidden;
+	width: 350px;
+}
