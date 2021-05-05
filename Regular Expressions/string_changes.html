@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>WEB TUTORIAL</title>
+</head>
+<body style="background-color: lightblue">
+	<center>
+		
+		<h2>JavaScript Regular Expressions</h2>
+		<p> Test array: [ <b> <h id="demo"></h> </b> ] </p>
+
+		<div> 
+			<h> Enter the charecter to be used to filter: </h>
+			<input type="text" name="text" id="char"><br>
+			<button onclick="func1()">Try it</button>
+			<p> Result: [ <h id="res1"></h> ] </p> 
+		</div>
+
+		<div>
+			<h> Enter the Regular Expression to be used to filter: </h>
+			<input type="text" name="text" id="char2"><br>
+			<button onclick="func2()">Try it</button>
+			<p> Result: [ <h id="res2"></h> ] </p>
+		</div>
+
+	</center>
+	
+
+	
+	
+
+	<script type="text/javascript">
+
+		var arr = [ "goal", "new", "user", "sit", "Eat", "dinner"];
+		document.getElementById("demo").innerHTML = arr;
+
+		function func1(){
+			let chr = document.getElementById('char').value;
+			let patt = new RegExp(chr);
+			var arr2 = arr.filter(item=>!patt.test(item));
+			document.getElementById("res1").innerHTML = arr2;
+		}
+
+		function func2(){
+			let chr = document.getElementById('char2').value;
+			let patt = new RegExp(chr, );
+			var arr2 = arr.filter(item=>!patt.test(item));
+			document.getElementById("res2").innerHTML = arr2;
+		}
+		
+		
+
+	</script>
+	
+</body>
+</html>
