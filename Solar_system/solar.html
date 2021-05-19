@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Solar System</title>
+	<style>
+		body{
+			background-color: black;
+			color: orange;
+		}
+		.div1{
+			font-size: 25px;
+			text-align: center;
+			height: 100%;
+			font-style: italic;
+		}
+		.div2{
+			font-size: 25px;
+			height: 250px;
+			color: lightgreen;
+			text-align: center;
+			height: 100%;
+			font-style: italic;
+		}
+	</style>
+</head>
+<body>
+	<br><br>
+	<center>
+		
+		<h1> Solar System </h1>
+		<h3> Choose a planet to display its breif info. </h3>
+
+		<div class="div1">
+			<select name="" id="sel" class="dropdown">
+				<option value="1">Mercury</option>
+				<option value="2">Venus</option>
+				<option value="3">Earth</option>
+				<option value="4">Mars</option>
+				<option value="5">Jupiter</option>
+				<option value="6">Uranus</option>
+				<option value="7">Saturn</option>
+				<option value="8">Neptune</option>
+			</select>
+			<br><br>
+
+			<input type="submit" value="Select" id="ok" class="btn" onclick="myfunc()">
+		</div>
+
+		<div class="div2">
+			<h3> Here you go!! </h3>
+			<p id="info1"></p>
+			<p id="info2"></p>
+			<p id="info3"></p>
+			<p id="info4"></p>
+		</div>
+		
+	</center>
+	
+
+	<script type="text/javascript" src="solar.js"></script>
+</body>
+</html>
