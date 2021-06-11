@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style type="text/css">
+        h3, h1{
+            color: cyan;
+        }
+
+        label {
+            color: white;
+        }
+
+        p {
+            color: black;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+
+    <title>Web Tutorial</title>
+</head>
+<body style="background-color: black">
+
+<center>
+
+    <h1> JavaScript Regular expressions </h1>
+
+    <h3>Given array ["goal", "new", "user", "sit", "eat", "dinner", "seat"]</h2><br>
+
+<div style="background-color: blue">
+    <label for="1">For the given array ,filte all the elements which do not contain the alphabet specified in the text box</label><br><br>
+    <input type="text" id="1" placeholder="Enter a single alphbet">
+    <input type="submit" value="Ok" onclick="func1()">
+     <p id="dis1"></p>
+    
+</div>
+
+<div style="background-color: orange">
+    <label for="2">Elements in the array which contains both specified input</label><br><br>
+    <input type="text" id="2" placeholder="Enter a single alphbet" ><input type="text" id="22" placeholder="Enter a single alphbet">
+    <input type="submit" value="ok" onclick="func2()"><br>
+     <p id="dis2"></p>
+    
+</div>
+
+
+<div style="background-color: white">
+    <label style="color: black" for="3">The elements that either starts with or ends with specified input</label><br><br>
+    <input type="text" id="3" placeholder="Enter one or more alphabet"><input type="text" id="32" placeholder="Enter one or more alphabet">
+    <input type="submit" value="ok" onclick="func3()"><br>
+     <p style="color: black" id="dis3"></p>
+    
+</div>
+
+<div style="background-color: violet">
+    <label for="4">Replace elments which contain "String" with "Y"</label><br><br>
+    <input type="text" id="4" placeholder="Enter the string">
+    <input type="submit" value="ok" onclick="func4()"><br>
+     <p id="dis4"></p>
+    
+</div>
+
+<div style="background-color: teal"> 
+    <label for="5">In string "refused reed redo received" substrings "refused reed received" are replaced by "X"</label><br><br>
+    <input type="submit" value="GET" onclick="func5()"><br>
+     <p id="dis5"></p>
+    
+</div>
+
+<div style="background-color: green">
+    <label for="6">'th\\er\\e ar\\e commonasp\\ects among th\\e alt\\ernations' in this string '\e' is replaced with'e'</label><br><br>
+    <input type="submit" value="GET" onclick="func6()"><br>
+     <p id="dis6"></p>
+    
+</div>
+
+</center>
+
+    <script src="tutorial_work.js"></script>
+</body>
+</html>
